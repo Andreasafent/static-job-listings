@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;700&display=swap');
+/* font-family: 'League Spartan', sans-serif; */
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: hsl(180, 52%, 96%);
+    font-family: 'League Spartan', sans-serif;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.show{
+    display:block;
+}
+
+.hide{
+    display:none !important;
+}
+
+.background-design{
+    background-color: hsl(180, 29%, 50%);
+}
+
+header .background-design img{
+    width:100vw;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.jobs-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item-container{
+    width:75vw;
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    padding:0 5%;
+    margin-top:6vh;
+    border-radius:5px;
+    -webkit-box-shadow: 0px 5px 9px -3px rgba(0,0,0,0.74); 
+    box-shadow: 0px 5px 9px -3px rgba(0,0,0,0.74);
+}
+
+.border-left-green{
+    border-left:solid 5px hsl(180, 29%, 50%);
+}
+
+.item-container-inner{
+    position: relative;
+    top:-3vh;
+    display: flex;
+    flex-direction: column;    
+}
+
+
+/* --------------------SINGLE-ITEM-TOP-------------------- */
+
+.single-item-top{
+    display: flex;
+    flex-direction: column;
+}
+
+.single-item-top .profile-pic img{
+    width:50px;
+}
+
+.single-item-top .item-name-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap:10%;
+}
+
+.item-tag-container{
+    display: flex;
+    gap:7%;
+}
+
+.single-item-top .item-name-container .item-name p{
+    color:hsl(180, 29%, 50%);
+    font-weight: bold;
+}
+
+
+
+.item-name-container .item-tag-container ul{
+    display: flex;
+    gap:5vw;
+}
+
+.item-name-container .item-tag-container ul li{
+    color:white;
+    padding:5px 10px;
+    border-radius:15px;
+}
+
+.item-name-container .item-tag-container ul .new{
+    background-color: hsl(180, 29%, 50%);
+}
+
+.item-name-container .item-tag-container ul .featured{
+    background-color: hsl(180, 14%, 20%);
+}
+
+
+
+.single-item-top .item-job-title p{
+    font-weight: bold;
+}
+
+.single-item-top .item-desc ul{
+    display: flex;
+    gap:10%;
+    color:hsl(180, 8%, 52%);
+}
+
+/* --------------------SINGLE-ITEM-BOTTOM-------------------- */
+
+.single-item-bottom .item-tags ul{
+    display: flex;
+    gap:2vw;
+    flex-wrap: wrap;
+} 
+
+.single-item-bottom .item-tags ul li{
+    background-color: hsl(180, 52%, 96%);
+    color:hsl(180, 29%, 50%);
+    font-weight: bold;
+    padding:10px;
+    border-radius:5px;
+}
+
+.single-item-bottom .item-tags ul li:hover{
+    background-color: hsl(180, 29%, 50%);
+    color:hsl(180, 52%, 96%);
+    cursor: pointer;
+}
+
+
+
+
+hr{
+    width:75vw;
+}
+
+/* --------------------FILTER CONTAINER-------------------- */
+
+.filter-container{
+    width:82vw;
+    display: flex;
+    background-color: white;
+    -webkit-box-shadow: 0px 5px 9px -3px rgba(0,0,0,0.74); 
+    box-shadow: 0px 5px 9px -3px rgba(0,0,0,0.74);
+    justify-content: space-between;
+    padding: 10px;
+    position: relative;
+    top:-6vh;
+}
+
+.filter-buttons-container{
+    width:70%;
+    display: flex;
+    flex-wrap: wrap;
+    gap:1vw;
+}
+
+.clear-button-container{
+    width:30%;
+}
+
+.filter-buttons-container .filter-btn-item{
+    display: flex;
+}
+
+.filter-buttons-container .filter-btn-item button{
+    font-weight: bold;
+    padding: 16px;
+    font-size: 1rem;
+    border: none;
+}
+.filter-buttons-container .filter-btn-item .filter-btn{
+    background-color: hsl(180, 52%, 96%);
+    color: hsl(180, 29%, 50%);
+    font-weight: bold;
+    border-radius:10px 0 0 10px;
+}
+
+.filter-buttons-container .filter-btn-item .filter-btn-remove{
+    background-color: hsl(180, 29%, 50%);
+    font-weight: bold;
+    border-radius:0 10px 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filter-buttons-container .filter-btn-item .filter-btn-remove img{
+    width:2vh;
+}
+
+.filter-container .clear-button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filter-container .clear-btn{
+    border:none;
+    background:none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color:hsl(180, 8%, 52%);
+    font-family: 'League Spartan', sans-serif;
+}
+
+
+/* -----------------LARGE SCREENS----------------- */
+
+@media screen and (min-width:1200px){
+    .l-block{
+        display:block;
+    }
+    
+    .l-none{
+        display:none;
+    }
+
+    .item-container .item-container-inner .single-item-top{
+        flex-direction: row;
+        gap:1vw;
+        align-items: center;
+    }
+    
+    .item-container{
+        padding:4vh;
+    }
+    
+    .item-container .item-container-inner{
+        flex-direction: row;
+        position:static;
+    }
+    
+    .single-item-top .profile-pic img{
+        width:100%;
+    }
+    
+    .single-item-top .item-name-container{
+        flex-direction: row;
+        align-items: center;
+        gap:1vw;
+    }
+    
+    .single-item-top .item-name-container .item-tag-container ul{
+        display: flex;
+        gap:2vw;
+    }
+    
+    .single-item-bottom{
+        align-self: center;
+        margin-left:auto;
+    }  
+    
+    .single-item-top .item-desc ul{
+        gap:2vw;
+    }
+}
+
+
+/* -----------------MEDIUM SCREENS----------------- */
+
+
+@media screen and (max-width:1200px){
+    .m-block{
+        display:block;
+    }
+    
+    .m-none{
+        display:none;
+    }
+    
+    .single-item-top{
+        flex-direction: column;
+    }
+    
+    .item-container-inner{
+        flex-direction: column;
+        
+    }
+    
+}
+
+
+
+
+
+@media screen and (max-width:680px){
+    
+    .s-block{
+        display:block;
+    }
+
+    .s-none{
+        display:none;
+    }
+}
